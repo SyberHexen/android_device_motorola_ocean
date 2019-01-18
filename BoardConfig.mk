@@ -25,6 +25,9 @@ TARGET_OTA_ASSERT_DEVICE := ocean
 # Audio
 # AUDIO_FEATURE_ENABLE_TFA98XX_FEEDBACK := true
 
+# Display
+TARGET_SCREEN_DENSITY := 320
+
 # Kernel
 TARGET_KERNEL_CONFIG := ocean_defconfig
 

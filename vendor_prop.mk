@@ -32,6 +32,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.expose.aux=1
 
-# Display
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=320
