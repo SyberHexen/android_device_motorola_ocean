@@ -1,0 +1,92 @@
+# TWRP RECOVERY
+
+# TOUCHSCREEN_FIRMWARE
+# _BOE | TIANMAH
+vendor/lib/modules/himax_mmi.ko:recovery/root/vendor/lib/modules/himax_mmi.ko
+# _TIANMAH
+vendor/lib/modules/synaptics_tcm_i2c.ko:recovery/root/vendor/lib/modules/synaptics_tcm_i2c.ko
+vendor/lib/modules/synaptics_tcm_core.ko:recovery/root/vendor/lib/modules/synaptics_tcm_core.ko
+vendor/lib/modules/synaptics_tcm_touch.ko:recovery/root/vendor/lib/modules/synaptics_tcm_touch.ko
+vendor/lib/modules/synaptics_tcm_device.ko:recovery/root/vendor/lib/modules/synaptics_tcm_device.ko
+vendor/lib/modules/synaptics_tcm_reflash.ko:recovery/root/vendor/lib/modules/synaptics_tcm_reflash.ko
+vendor/lib/modules/synaptics_tcm_testing.ko:recovery/root/vendor/lib/modules/synaptics_tcm_testing.ko
+# _CSOT
+vendor/lib/modules/nova_mmi.ko
+
+# RECOVERY_QSEECOM_FIRMWARE
+etc/firmware/ice40.bin:recovery/root/system/firmware/ice40.bin
+
+# RECOVERY_QSEECOMD
+vendor/bin/qseecomd:recovery/root/sbin/qseecomd
+vendor/lib64/libdiag.so:recovery/root/vendor/lib64/libdiag.so
+vendor/lib64/libdrmfs.so:recovery/root/vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so:recovery/root/vendor/lib64/libdrmtime.so
+vendor/lib64/libGPreqcancel.so:recovery/root/vendor/lib64/libGPreqcancel.so
+vendor/lib64/libGPreqcancel_svc.so:recovery/root/vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libqisl.so:recovery/root/vendor/lib64/libqisl.so
+vendor/lib64/libQSEEComAPI.so:recovery/root/vendor/lib64/libQSEEComAPI.so
+vendor/lib64/librpmb.so:recovery/root/vendor/lib64/librpmb.so
+vendor/lib64/libssd.so:recovery/root/vendor/lib64/libssd.so
+vendor/lib64/libtime_genoff.so:recovery/root/vendor/lib64/libtime_genoff.so
+
+# Vendor (missing)
+# vendor/lib64/libspl.so:recovery/root/vendor/lib64/libspl.so
+# vendor/lib64/libops.so:recovery/root/vendor/lib64/libops.so
+# vendor/lib64/libspcom.so:recovery/root/vendor/lib64/libspcom.so
+
+# (ungrouped)
+vendor/lib64/libqdutils.so:recovery/root/vendor/lib64/libqdutils.so
+vendor/lib64/libqservice.so:recovery/root/vendor/lib64/libqservice.so
+vendor/lib64/librecovery_updater_msm.so:recovery/root/vendor/lib64/librecovery_updater_msm.so
+vendor/lib64/libsecureui.so:recovery/root/vendor/lib64/libsecureui.so
+vendor/lib64/libSecureUILib.so:recovery/root/vendor/lib64/libSecureUILib.so
+vendor/lib64/libsecureui_svcsock.so:recovery/root/vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libStDrvInt.so:recovery/root/vendor/lib64/libStDrvInt.so
+vendor/lib64/vendor.display.config@1.0.so:recovery/root/vendor/lib64/vendor.display.config@1.0.so
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:recovery/root/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+
+# MISC
+system/bin/crash_dump64:recovery/root/system_root/system/bin/crash_dump64
+vendor/etc/gpfspath_oem_config.xml:recovery/root/vendor/etc/gpfspath_oem_config.xml
+
+# SBIN
+system/lib64/android.hardware.confirmationui@1.0.so:recovery/root/sbin/android.hardware.confirmationui@1.0.so
+system/vndk-28/lib64/android.hardware.weaver@1.0.so:recovery/root/sbin/android.hardware.weaver@1.0.so
+system/lib64/android.hidl.base@1.0.so:recovery/root/sbin/android.hidl.base@1.0.so
+system/lib64/libcap.so:recovery/root/sbin/libcap.so
+system/lib64/libicuuc.so:recovery/root/sbin/libicuuc.so
+system/lib64/libion.so:recovery/root/sbin/libion.so
+system/lib64/libpcrecpp.so:recovery/root/sbin/libpcrecpp.so
+system/lib64/libprocinfo.so:recovery/root/sbin/libprocinfo.so
+system/lib64/libsysutils.so:recovery/root/sbin/libsysutils.so
+system/lib64/libxml2.so:recovery/root/sbin/libxml2.so
+
+# TIME_DAEMON
+vendor/bin/time_daemon:recovery/root/sbin/time_daemon
+vendor/lib64/libdsutils.so:recovery/root/sbin/libdsutils.so
+vendor/lib64/libidl.so:recovery/root/sbin/libidl.so
+vendor/lib64/libmdmdetect.so:recovery/root/sbin/libmdmdetect.so
+vendor/lib64/libqmi_cci.so:recovery/root/sbin/libqmi_cci.so
+vendor/lib64/libqmi_client_qmux.so:recovery/root/sbin/libqmi_client_qmux.so
+vendor/lib64/libqmi_common_so.so:recovery/root/sbin/libqmi_common_so.so
+vendor/lib64/libqmi_encdec.so:recovery/root/sbin/libqmi_encdec.so
+vendor/lib64/libqmiservices.so:recovery/root/sbin/libqmiservices.so
+
+# RECOVERY_BOOT
+vendor/lib64/hw/android.hardware.boot@1.0-impl.so:recovery/root/vendor/lib64/hw/android.hardware.boot@1.0-impl.so
+vendor/bin/hw/android.hardware.boot@1.0-service:recovery/root/sbin/android.hardware.boot@1.0-service
+system/lib64/android.hardware.boot@1.0.so:recovery/root/sbin/android.hardware.boot@1.0.so
+vendor/lib64/hw/bootctrl.msm8953.so:recovery/root/vendor/lib64/hw/bootctrl.msm8953.so
+
+# RECOVERY_GATEKEEPER
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:recovery/root/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:recovery/root/sbin/android.hardware.gatekeeper@1.0-service-qti
+
+# RECOVERY_KEYMASTER
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:recovery/root/vendor/lib64/hw/android.hardware.keymaster@4.0-impl-qti.so
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:recovery/root/sbin/android.hardware.keymaster@4.0-service-qti
+vendor/lib64/libkeymasterdeviceutils.so:recovery/root/vendor/lib64/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterprovision.so:recovery/root/vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so:recovery/root/vendor/lib64/libkeymasterutils.so
+vendor/lib64/libqtikeymaster4.so:recovery/root/vendor/lib64/libqtikeymaster4.so
+

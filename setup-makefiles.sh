@@ -43,6 +43,8 @@ setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
 write_headers
 
 write_makefiles "$MY_DIR"/proprietary-files-system.txt true
+write_makefiles "$MY_DIR"/proprietary-files-vendor.txt true
+write_makefiles "$MY_DIR"/proprietary-files-twrp.txt true
 
 # Finish
 write_footers
