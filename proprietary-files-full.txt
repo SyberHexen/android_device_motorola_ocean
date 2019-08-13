@@ -727,9 +727,9 @@ vendor/firmware/emmc_ffu_15_RC1BMB.fw
 vendor/firmware/emmc_ffu_15_RE1BMB.fw
 vendor/firmware/emmc_ffu_15_RX14MB.fw
 vendor/firmware/emmc_ffu_15_RX1BMB.fw
-vendor/firmware/himax-boe-hx83112a-0905-208-river.bin
+vendor/firmware/himax-boe-hx83112a-0a05-208-river.bin
 vendor/firmware/himax-boe-hx83112a-river.csv
-vendor/firmware/himax-tianmah-hx83112a-0200-208-river.bin
+vendor/firmware/himax-tianmah-hx83112a-0500-208-river.bin
 vendor/firmware/himax-tianmah-hx83112a-river.csv
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw

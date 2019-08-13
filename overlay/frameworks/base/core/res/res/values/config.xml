@@ -558,7 +558,7 @@
     <bool name="config_telephony_use_own_number_for_voicemail_in_gsm">false</bool>
     <bool name="config_use_dun_for_tethering_only">false</bool>
     <bool name="config_use_nv_band_pref">true</bool>
-    <bool name="config_volte_preferred">false</bool>>
+    <bool name="config_volte_preferred">false</bool>
     <bool name="config_wifi_hs20_sim_mnc_mcc_retail">true</bool>
     <bool name="config_wifi_pmf_supported">true</bool>
     <bool name="default_domestic_roaming_data_enabled">false</bool>
