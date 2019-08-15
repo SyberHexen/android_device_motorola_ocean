@@ -91,6 +91,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
+    lineage.livedisplay@2.0-service-sysfs \
     lineage.livedisplay@2.0-service-sdm
 
 # Netutils
