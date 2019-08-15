@@ -63,6 +63,11 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
 				libvulkan
 
+# Fingerprint Gestures
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/uinput-egis.kl:system/usr/keylayout/uinput-egis.kl \
+    $(LOCAL_PATH)/idc/uinput-egis.idc:system/usr/idc/uinput-egis.idc
+
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
