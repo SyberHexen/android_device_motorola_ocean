@@ -63,7 +63,6 @@ fi
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files-system.txt" "${SRC}" ${KANG} --section "${SECTION}"
-extract "${MY_DIR}/proprietary-files-vendor.txt" "${SRC}" ${KANG} --section "${SECTION}"
 extract "${MY_DIR}/proprietary-files-twrp.txt"  "${SRC}" ${KANG} --section "${SECTION}"
 
 BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
