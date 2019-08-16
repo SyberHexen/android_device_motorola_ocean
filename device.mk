@@ -58,7 +58,7 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0 \
     libdisplayconfig \
     libqdMetaData.system \
-				libvulkan
+    libvulkan
 
 # Fingerprint Gestures
 PRODUCT_COPY_FILES += \

@@ -24,10 +24,8 @@
          "oldname:newname", one per entry. -->
     <string-array name="config_displayModeMappings" translatable="false">
             <item>hal_srgb:sRGB</item>
-            <item>hal_adobe:Natural</item>
             <item>hal_native:Standard</item>
             <item>hal_warm_srgb:Reading</item>
-            <item>hal_warm_adobe:Cinema</item>
     </string-array>
 
     <!-- Hardware keys present on the device, stored as a bit field.

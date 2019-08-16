@@ -24,6 +24,9 @@ lib64/com.quicinc.cne.server@1.0.so
 lib64/vendor.qti.hardware.data.latency@1.0.so
 -priv-app/CNEService/CNEService.apk
 
+# Display postprocessing
+lib64/vendor.display.color@1.0.so
+
 # HotwordEnrollment
 -priv-app/HotwordEnrollmentOKGoogleCS47L35/HotwordEnrollmentOKGoogleCS47L35.apk
 -priv-app/HotwordEnrollmentTGoogleCS47L35/HotwordEnrollmentTGoogleCS47L35.apk
@@ -48,6 +51,9 @@ lib/vendor.qti.hardware.perf@1.0.so
 lib64/libqti_performance.so
 lib64/libqti-perfd-client_system.so
 lib64/vendor.qti.hardware.perf@1.0.so
+
+# SDM
+lib64/libsdm-disp-apis.so
 
 # Telephony
 -app/QtiTelephonyService/QtiTelephonyService.apk
