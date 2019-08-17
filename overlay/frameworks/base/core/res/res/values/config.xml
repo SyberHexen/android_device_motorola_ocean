@@ -199,6 +199,10 @@
         M -80,0 L -50,110 L 50,110 L 80,0 Z
     </string>
 
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">110.0px</dimen>
+    <dimen name="status_bar_height_landscape">24.0dp</dimen>
+
     <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
          if the sensor HAL correctly handles the proximity sensor as a wake-up source.
