@@ -109,5 +109,5 @@
          running -->
     <item name="cpu.active">3.5</item>
     <!-- This is the battery capacity in mAh -->
-    <item name="battery.capacity">3000</item>
+    <item name="battery.capacity">5000</item>
 </device>
