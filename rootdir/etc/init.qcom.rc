@@ -27,3 +27,6 @@
 
 on post-fs
     umount /oem
+
+on init
+    mount none /dev/null /vendor/bin/init.mmi.hab.sh bind
