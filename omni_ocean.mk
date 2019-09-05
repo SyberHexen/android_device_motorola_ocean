@@ -57,11 +57,11 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 
 # Time Zone data for recovery
 PRODUCT_COPY_FILES += \
-    system/timezone/output_data/iana/tzdata:recovery/root/system_root/usr/share/zoneinfo/tzdata
+    system/timezone/output_data/iana/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := river
-PRODUCT_NAME := omni_river
+PRODUCT_DEVICE := ocean
+PRODUCT_NAME := omni_ocean
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Moto G7
+PRODUCT_MODEL := moto g(7) power
 PRODUCT_MANUFACTURER := motorola

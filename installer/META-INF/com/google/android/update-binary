@@ -31,10 +31,10 @@ extract() {
 	unzip -o "$1" -d "$2" || abort "Failed to extract zip to $2!"
 }
 
-print "#########################################"
-print "#  TWRP installer for Moto G7 (river)   #"
-print "#            by @SyberHexen             #"
-print "#########################################"
+print "#############################################"
+print "# TWRP installer for Moto g(7) power(ocean) #"
+print "#                by @SyberHexen             #"
+print "#############################################"
 print
 # Unpack the installer
 [ "$zip" ] && {

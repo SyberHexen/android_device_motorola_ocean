@@ -10,19 +10,14 @@ load_panel()
     echo "panel supplier vendor is: [$panel_supplier]"
 
     case $panel_supplier in
-        boe | tianmah)
-            insmod /vendor/lib/modules/himax_mmi.ko
-            ;;
-        tianman)
-            insmod /vendor/lib/modules/nova_mmi.ko
+        ofilm)
+            insmod /vendor/lib/modules/focaltech_mmi.ko
             ;;
         tianma)
-            insmod /vendor/lib/modules/synaptics_tcm_i2c.ko
-            insmod /vendor/lib/modules/synaptics_tcm_core.ko
-            insmod /vendor/lib/modules/synaptics_tcm_touch.ko
-            insmod /vendor/lib/modules/synaptics_tcm_device.ko
-            insmod /vendor/lib/modules/synaptics_tcm_reflash.ko
-            insmod /vendor/lib/modules/synaptics_tcm_testing.ko
+            insmod /vendor/lib/modules/ilitek_mmi.ko
+            ;;
+        csot)
+            insmod /vendor/lib/modules/nova_mmi.ko
             ;;
         *)
 		    echo "$panel_supplier not supported"
@@ -46,6 +41,12 @@ device_model()
             insmod /vendor/lib/modules/drv2624_mmi.ko
             insmod /vendor/lib/modules/aw869x.ko
             insmod /vendor/lib/modules/sx933x_sar.ko
+            ;;
+        ocean)
+            insmod /vendor/lib/modules/aw8624.ko
+            insmod /vendor/lib/modules/drv2624_mmi.ko
+            insmod /vendor/lib/modules/sx932x_sar.ko
+            insmod /vendor/lib/modules/tps61280.ko
             ;;
         *)
             echo "$device_name not supported"
