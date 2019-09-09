@@ -196,11 +196,11 @@
          Note that a physical cutout should be configured in pixels for the best results.
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M -80,0 L -50,110 L 50,110 L 80,0 Z
+        M -130,0 L -130,53 L 130,53 L 130,0 Z
     </string>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">110.0px</dimen>
+    <dimen name="status_bar_height_portrait">53.0px</dimen>
     <dimen name="status_bar_height_landscape">24.0dp</dimen>
 
     <!-- Indicate whether to allow the device to suspend when the screen is off
