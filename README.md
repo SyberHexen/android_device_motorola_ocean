@@ -7,9 +7,9 @@ Basic   | Spec Sheet
 CPU     | Octa-core 1.8 GHz Cortex-A53
 CHIPSET | Qualcomm SDM632 Snapdragon 632
 GPU     | Adreno 506
-Memory  | 4GB
+Memory  | 3GB (USA) / 4GB (EU)
 Shipped Android Version | 9.0 (Pie)
-Internal Storage 32GB | 64GB
+Internal Storage | 32GB  (USA) / 64GB  (EU)
 microSD | Up to 1 TB (dedicated slot)
 Battery | 5000 mAh
 Dimensions | 157 x 75.3 x 8 mm
@@ -17,10 +17,14 @@ Display | 1520 x 720 pixels, 6.2-inch IPS LCD
 Rear Camera  | 12 MP (f/1.8, 1.25µm, PDAF)
 Front Camera | 8 MP 1.12µm, HDR
 
-![Motorola g7 power](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g7-1.jpg "Motorola g7 power")
+![Motorola g7 power](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g7-power-1.jpg "Motorola g7 power")
 
 ### Kernel Source
-To Be Released
+
+```sh
+TAG: MMI-PPO29
+https://github.com/MotorolaMobilityLLC/kernel-msm/tree/pie-9.0.0-release-ppo29
+```
 
 ### Build with TWRP installer
 To auotomatic make the twrp installer, 
