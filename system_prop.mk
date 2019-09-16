@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+# Adoptable Storage (Prevents SDCARD Double Encryption)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.allow_encrypt_override=true \
+    ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.min.duration.secs=30
