@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=river
+DEVICE=ocean
 VENDOR=motorola
 
 INITIAL_COPYRIGHT_YEAR=2019

@@ -16,7 +16,7 @@
 
 BOARD_VENDOR := motorola
 
-DEVICE_PATH := device/motorola/river
+DEVICE_PATH := device/motorola/ocean
 
 # Architecture
 TARGET_ARCH := arm64
@@ -52,7 +52,7 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
-TARGET_KERNEL_CONFIG := river_defconfig
+TARGET_KERNEL_CONFIG := ocean_defconfig
 TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
@@ -127,7 +127,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
-TARGET_RECOVERY_FSTAB := device/motorola/river/recovery/root/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/motorola/ocean/recovery/root/recovery.fstab
 
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
@@ -151,4 +151,4 @@ BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
 # Inherit from the proprietary version
--include vendor/motorola/river/BoardConfigVendor.mk
+-include vendor/motorola/ocean/BoardConfigVendor.mk
