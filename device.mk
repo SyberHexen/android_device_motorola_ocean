@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/motorola/river/river-vendor.mk)
+$(call inherit-product, vendor/motorola/ocean/ocean-vendor.mk)
 
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
@@ -62,8 +62,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint Gestures
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/uinput-egis.kl:system/usr/keylayout/uinput-egis.kl \
-    $(LOCAL_PATH)/idc/uinput-egis.idc:system/usr/idc/uinput-egis.idc
+    $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
+    $(LOCAL_PATH)/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc
 
 # FM
 PRODUCT_PACKAGES += \

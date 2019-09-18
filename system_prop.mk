@@ -29,7 +29,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
     audio.offload.min.duration.secs=30 \
     persist.speaker.prot.enable=false \
-    persist.audio.AoU.configFile=river \
     persist.audio.qti.flac.decoder=true \
     media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
     qcom.hw.aac.encoder=true \
