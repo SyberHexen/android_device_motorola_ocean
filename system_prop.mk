@@ -64,6 +64,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.gt_library=libqti-gt.so \
     ro.vendor.at_library=libqti-at.so 
 
+# CNE
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.cne.feature=1
+
+# Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.display.enable_default_color_mode=1 \
+    debug.gralloc.enable_fb_ubwc=1 \
+    debug.sf.enable_hwc_vds=1 \
+    debug.sf.latch_unsignaled=1
+
 # Encoding
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.enc.disable_bframes=1 \
@@ -74,16 +85,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.enc.disable.pq=true \
     vidc.enc.dcvs.extra-buff-count=2 
 
-# Display
+# IMS
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.display.enable_default_color_mode=1 \
-    debug.gralloc.enable_fb_ubwc=1 \
-    debug.sf.enable_hwc_vds=1 \
-    debug.sf.latch_unsignaled=1
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1  \
+    persist.dbg.wfc_avail_ovr=1
 
-# CNE
+# Netmgr
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.cne.feature=1
+    ro.vendor.use_data_netmgrd=true \
+    persist.vendor.data.mode=concurrent
+
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.core_ctl_max_cpu=4 \
+    ro.vendor.qti.core_ctl_min_cpu=2
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -94,26 +110,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.fi_supported=1 \
     telephony.lteOnCdmaDevice=1
 
-# IMS
+# SSR
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1  \
-    persist.dbg.wfc_avail_ovr=1
-
-# Perf
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.core_ctl_max_cpu=4 \
-    ro.vendor.qti.core_ctl_min_cpu=2
-
-# Netmgr
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.use_data_netmgrd=true \
-    persist.vendor.data.mode=concurrent
+    persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Time-Services
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
 
-# SSR
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.ssr.restart_level=ALL_ENABLE
