@@ -27,22 +27,41 @@ lib64/vendor.qti.hardware.data.latency@1.0.so
 # Display postprocessing
 lib64/vendor.display.color@1.0.so
 
+# ESE-Powermanager
+lib/vendor.qti.esepowermanager@1.0.so
+lib64/vendor.qti.esepowermanager@1.0.so
+
+# GPS
+etc/permissions/com.qti.location.sdk.xml
+etc/permissions/com.qualcomm.location.xml
+etc/permissions/izat.xt.srv.xml
+etc/permissions/privapp-permissions-com.qualcomm.location.xml
+framework/com.qti.location.sdk.jar
+framework/izat.xt.srv.jar
+lib64/liblocationservice_jni.so
+lib64/libxt_native.so
+lib64/vendor.qti.gnss@1.0.so
+lib64/vendor.qti.gnss@1.1.so
+lib64/vendor.qti.gnss@1.2.so
+lib64/vendor.qti.gnss@2.0.so
+lib64/vendor.qti.gnss@2.1.so
+
 # HotwordEnrollment
 -priv-app/HotwordEnrollmentOKGoogleCS47L35/HotwordEnrollmentOKGoogleCS47L35.apk
 -priv-app/HotwordEnrollmentTGoogleCS47L35/HotwordEnrollmentTGoogleCS47L35.apk
 -priv-app/HotwordEnrollmentXGoogleCS47L35/HotwordEnrollmentXGoogleCS47L35.apk
 
-# IMS
--priv-app/ims/ims.apk|b664bb413e88dbe88f49f400260f288306fc9e23
-lib64/libdiag_system.so
-lib64/libimscamera_jni.so
-lib64/libimsmedia_jni.so
-lib64/lib-imsvideocodec.so
-lib64/lib-imsvtextutils.so
-lib64/lib-imsvt.so
-lib64/lib-imsvtutils.so
-lib64/librcc.so
-lib64/vendor.qti.imsrtpservice@1.0.so
+# IOP
+lib/vendor.qti.hardware.iop@1.0.so
+lib/vendor.qti.hardware.iop@2.0.so
+lib64/vendor.qti.hardware.iop@1.0.so
+lib64/vendor.qti.hardware.iop@2.0.so
+
+# Media
+lib/libmmosal.so
+lib/vendor.qti.hardware.vpp@1.1.so
+lib64/libmmosal.so
+lib64/vendor.qti.hardware.vpp@1.1.so
 
 # Perf
 lib/libqti_performance.so
@@ -52,8 +71,39 @@ lib64/libqti_performance.so
 lib64/libqti-perfd-client_system.so
 lib64/vendor.qti.hardware.perf@1.0.so
 
+# Radio
+-app/datastatusnotification/datastatusnotification.apk
+-app/embms/embms.apk
+etc/permissions/embms.xml
+framework/embmslibrary.jar
+
+# Radio - IMS
+-priv-app/ims/ims.apk|b664bb413e88dbe88f49f400260f288306fc9e23
+etc/permissions/com.qualcomm.qti.imscmservice.xml
+etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
+etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
+framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
+framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
+framework/com.qualcomm.qti.uceservice-V2.0-java.jar
+framework/vendor.qti.ims.callinfo-V1.0-java.jar
+framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
+lib64/libdiag_system.so
+lib64/libimscamera_jni.so
+lib64/libimsmedia_jni.so
+lib64/lib-imscamera.so
+lib64/lib-imsvideocodec.so
+lib64/lib-imsvtextutils.so
+lib64/lib-imsvt.so
+lib64/lib-imsvtutils.so
+lib64/librcc.so
+lib64/vendor.qti.imsrtpservice@1.0.so
+
 # SDM
 lib64/libsdm-disp-apis.so
+
+# Soter
+framework/vendor.qti.hardware.soter-V1.0-java.jar
+lib64/vendor.qti.hardware.soter@1.0.so
 
 # Telephony
 -app/QtiTelephonyService/QtiTelephonyService.apk
@@ -65,3 +115,7 @@ framework/qcrilhook.jar
 framework/qti-telephony-common.jar|b1953a3599255f08f1785c677d22810f65e0167b
 framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|93116f4bc8d2ff145bd39801232cdbe2ca53ecfa
+
+# TUI
+lib/vendor.qti.hardware.tui_comm@1.0.so
+lib64/vendor.qti.hardware.tui_comm@1.0.so
