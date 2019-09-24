@@ -72,7 +72,7 @@ lib64/libqti-perfd-client_system.so
 lib64/vendor.qti.hardware.perf@1.0.so
 
 # Radio
--app/datastatusnotification/datastatusnotification.apk
+-app/datastatusnotification/datastatusnotification.apk|f73d163acf4a9748e27a666fabb382d341150e8e
 -app/embms/embms.apk
 etc/permissions/embms.xml
 framework/embmslibrary.jar
@@ -112,9 +112,9 @@ etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
 etc/permissions/qti_permissions.xml
 etc/permissions/telephonyservice.xml
 framework/qcrilhook.jar
-framework/qti-telephony-common.jar|b1953a3599255f08f1785c677d22810f65e0167b
+framework/qti-telephony-common.jar|e529711775c31da38c9ecd1ab94b27ee15570dc4
 framework/QtiTelephonyServicelibrary.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|93116f4bc8d2ff145bd39801232cdbe2ca53ecfa
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|d1d3adfe6eff32a3013e146317324029181e3c4a
 
 # TUI
 lib/vendor.qti.hardware.tui_comm@1.0.so
