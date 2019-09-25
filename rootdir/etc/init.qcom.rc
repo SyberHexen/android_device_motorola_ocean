@@ -31,6 +31,9 @@ on post-fs
 on init
     mount none /dev/null /vendor/bin/init.mmi.hab.sh bind
 
+    # Fix for Bluetooh Audio
+    mount none /system/etc/audio_effects.xml /vendor/etc/audio_effects.xml bind
+
     # Mix device-specific information into the entropy pool
     copy /proc/cmdline /dev/urandom
     copy /default.prop /dev/urandom

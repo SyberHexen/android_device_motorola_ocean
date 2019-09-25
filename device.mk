@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     tinymix
 
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/audio_effects.xml:system/etc/audio_effects.xml
+
 # Boot control
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
