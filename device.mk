@@ -64,6 +64,12 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libvulkan
 
+# Display - LiveDisplay
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/display/qdcm_calib_data_mipi_mot_vid_csot_720p_622.xml:system/etc/qdcm_calib_data_mipi_mot_vid_csot_720p_622.xml \
+    $(LOCAL_PATH)/display/qdcm_calib_data_mipi_mot_vid_ofilm_720p_622.xml:system/etc/qdcm_calib_data_mipi_mot_vid_ofilm_720p_622.xml \
+    $(LOCAL_PATH)/display/qdcm_calib_data_mipi_mot_vid_tianma_720p_622.xml:system/etc/qdcm_calib_data_mipi_mot_vid_tianma_720p_622.xml
+
 # Fingerprint Gestures
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \

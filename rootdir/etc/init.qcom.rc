@@ -40,6 +40,11 @@ on init
     # Fix for Bluetooh Audio
     mount none /system/etc/audio_effects.xml /vendor/etc/audio_effects.xml bind
 
+    # Fix for LiveDisplay color inversion with hal_Adobe
+    mount none /system/etc/qdcm_calib_data_mipi_mot_vid_csot_720p_622.xml /vendor/etc/qdcm_calib_data_mipi_mot_vid_csot_720p_622.xml bind
+    mount none /system/etc/qdcm_calib_data_mipi_mot_vid_ofilm_720p_622.xml /vendor/etc/qdcm_calib_data_mipi_mot_vid_ofilm_720p_622.xml bind
+    mount none /system/etc/qdcm_calib_data_mipi_mot_vid_tianma_720p_622.xml /vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_720p_622.xml bind
+
     # Mix device-specific information into the entropy pool
     copy /proc/cmdline /dev/urandom
     copy /default.prop /dev/urandom
