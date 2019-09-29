@@ -133,6 +133,8 @@ TARGET_RECOVERY_FSTAB := device/motorola/river/recovery/root/recovery.fstab
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_RIL_VARIANT := caf
 
+CUSTOM_APNS_FILE := $(DEVICE_PATH)/configs/custom_apns.xml
+
 # SELinux
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/qcom/sepolicy/private
