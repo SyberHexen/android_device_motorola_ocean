@@ -31,6 +31,17 @@ on post-fs
 on init
     mount none /dev/null /vendor/bin/init.mmi.hab.sh bind
 
+    # Begin Changes for Prima WLAN
+    mount none /dev/null /vendor/lib/modules/pronto_wlan.ko bind
+    mount none /system/bin/hw/android.hardware.wifi@1.0-service /vendor/bin/hw/android.hardware.wifi@1.0-service bind
+    mount none /system/bin/hw/hostapd /vendor/bin/hw/hostapd bind
+    mount none /system/bin/hw/wpa_supplicant /vendor/bin/hw/wpa_supplicant bind
+    mount none /system/lib/libcld80211.so /vendor/lib/libcld80211.so bind
+    mount none /system/lib/libwpa_client /vendor/lib/libwpa_client bind
+    mount none /system/lib64/libcld80211.so /vendor/lib64/libcld80211.so bind
+    mount none /system/lib64/libwifi-hal.so /vendor/lib64/libwifi-hal.so bind
+    mount none /system/lib64/libwpa_client /vendor/lib64/libwpa_client bind
+
     # Fix for Bluetooh Audio
     mount none /system/etc/audio_effects.xml /vendor/etc/audio_effects.xml bind
 
@@ -46,3 +57,6 @@ on init
     # RIL permissions fix
     chmod 0644 /proc/cmdline
     chown root radio /proc/cmdline
+
+on boot
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
