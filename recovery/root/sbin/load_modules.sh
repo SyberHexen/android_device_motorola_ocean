@@ -32,7 +32,7 @@ device_model()
     SLOT=$(getprop ro.boot.slot_suffix)
 	mount /dev/block/bootdevice/by-name/vendor$SLOT /vendor -O ro
     device_name=""
-    device_name=$(getprop ro.boot.hab.product)
+    device_name=$(getprop ro.product.device)
     echo "device name is: [$device_name]"
 
     case $device_name in
