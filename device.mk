@@ -51,6 +51,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/mot_s5k4h7_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_s5k4h7_chromatix.xml \
     $(LOCAL_PATH)/configs/camera/mot_s5k5e9_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_s5k5e9_chromatix.xml
 
+# Fingerprint
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/uinput-egis.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-egis.kl \
+    $(LOCAL_PATH)/idc/uinput-egis.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-egis.idc
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
