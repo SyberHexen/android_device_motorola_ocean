@@ -37,7 +37,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script \
     update_engine \
-    update_engine_sideload \
     update_verifier
 
 # The following modules are included in debuggable builds only.
@@ -58,6 +57,13 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 # Time Zone data for recovery
 PRODUCT_COPY_FILES += \
     system/timezone/output_data/iana/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
+
+# Properties for decryption
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore=msm8953 \
+    ro.hardware.gatekeeper=msm8953 \
+    ro.hardware.bootctrl=msm8953 \
+    ro.build.system_root_image=true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ocean
