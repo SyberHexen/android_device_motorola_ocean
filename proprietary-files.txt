@@ -28,6 +28,14 @@ vendor/firmware/himax-tianmah-hx83112a-0500-208-river.bin
 vendor/firmware/himax-tianmah-hx83112a-river.csv
 vendor/firmware/novatek_ts-tianman-NT36672A-181127-0b-river.bin
 
+# Fingerprint
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc
+vendor/etc/init/init.ets.rc
+vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so
+vendor/lib64/libets_fp_et5.so
+vendor/lib64/libets_teeclient.so
+
 # Vibrator Firmwares
 vendor/firmware/aw869x_haptic.bin
 vendor/firmware/aw869x_rtp_Argo_Navis.bin
