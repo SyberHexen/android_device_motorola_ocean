@@ -269,9 +269,9 @@ vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Display calib
-vendor/etc/qdcm_calib_data_mipi_mot_vid_csot_720p_622.xml|a7bee235c1dbad83f1866e4e81d7cc0c1f503cfb
-vendor/etc/qdcm_calib_data_mipi_mot_vid_ofilm_720p_622.xml|ee544e447cc29388e56461b47149217d9e7987cc
-vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_720p_622.xml|d76ef6eeb5985180335f29ca58e18abfa5f08a2c
+vendor/etc/qdcm_calib_data_mipi_mot_vid_csot_720p_622.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_ofilm_720p_622.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_720p_622.xml
 
 # Display Panel Firmwares
 vendor/firmware/focaltech-ofilm-ft8006u-0e-001-ocean.bin
