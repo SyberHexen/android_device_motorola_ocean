@@ -79,8 +79,8 @@ TW_NEW_ION_HEAP := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi
 TW_USE_TOOLBOX := true
-TW_Y_OFFSET := 110
-TW_H_OFFSET := -110
+TW_Y_OFFSET := 53
+TW_H_OFFSET := -53
 
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
