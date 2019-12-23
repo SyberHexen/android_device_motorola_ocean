@@ -26,6 +26,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.sta_detect=true \
     ro.vendor.sdk.sensors.gestures=false
 
+# Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.camera.expose.aux=1
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=420
