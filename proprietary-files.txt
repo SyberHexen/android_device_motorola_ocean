@@ -36,6 +36,11 @@ vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so
 vendor/lib64/libets_fp_et5.so
 vendor/lib64/libets_teeclient.so
 
+# HotwordEnrollment
+-priv-app/HotwordEnrollmentOKGoogleCS47L35/HotwordEnrollmentOKGoogleCS47L35.apk
+-priv-app/HotwordEnrollmentTGoogleCS47L35/HotwordEnrollmentTGoogleCS47L35.apk
+-priv-app/HotwordEnrollmentXGoogleCS47L35/HotwordEnrollmentXGoogleCS47L35.apk
+
 # NFC
 vendor/lib64/libpn553_fw.so
 
@@ -102,3 +107,17 @@ vendor/firmware/marley-dsp1-ultrasound.wmfw
 vendor/firmware/marley-dsp2-aov-frontend.wmfw
 vendor/firmware/marley-dsp2-aov-vrgain.bin
 vendor/firmware/marley-dsp3-aov-control.wmfw
+
+# Sound Trigger
+vendor/lib/hw/sound_trigger.primary.default.so
+
+# Moto ADSP Hal - (Sound Trigger Dependencies)
+vendor/bin/hw/motorola.hardware.audio.adspd@1.0-service
+vendor/etc/init/motorola.hardware.audio.adspd@1.0-service.rc
+vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so
+vendor/lib/motorola.hardware.audio.adspd@1.0_vendor.so
+vendor/lib/motorola.hardware.audio.adspd@1.0.so
+vendor/lib64/vndk/libtinyalsa.so
+vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so
+vendor/lib64/motorola.hardware.audio.adspd@1.0.so
+
