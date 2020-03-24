@@ -27,6 +27,7 @@ TARGET_OTA_ASSERT_DEVICE := ocean
 
 # Kernel
 TARGET_KERNEL_CONFIG := ocean_defconfig
+TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := $(DEVICE_PATH)/recovery/ramdisk-recovery.cpio
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432        #    32768 * 1024 mmcblk0p41-42
