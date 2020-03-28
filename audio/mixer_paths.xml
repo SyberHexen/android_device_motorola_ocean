@@ -491,6 +491,10 @@
 		<ctl name="MultiMedia1 Mixer INTERNAL_FM_TX" value="1" />
 	</path>
 
+	<path name="fm-virtual-record">
+               <ctl name="MultiMedia2 Mixer INTERNAL_FM_TX" value="1" />
+	</path>
+
 	<path name="fm-virtual-record capture-fm">
 		<ctl name="MultiMedia2 Mixer INTERNAL_FM_TX" value="1" />
 	</path>
@@ -911,6 +915,11 @@
 	<path name="hdmi">
 	</path>
 
+	<path name="external-mic">
+		<path name="headset-mic" />
+		<ctl name="IN1R Volume" value="12" />
+	</path>
+
 	<path name="voice-rec-mic">
 		<path name="handset-mic" />
 	</path>
@@ -963,10 +972,7 @@
 	</path>
 
 	<path name="dmic-endfire">
-		<path name="AOV" />
-		<ctl name="SLIM_0_TX Channels" value="Two" />
-		<ctl name="SLIMTX1 Input 1" value="ISRC2DEC1" />
-		<ctl name="SLIMTX2 Input 1" value="ISRC2DEC2" />
+		<path name="voice-dmic-ef" />
 		<ctl name="IN1L Volume" value="12" />
 		<ctl name="IN2L Volume" value="12" />
 	</path>
