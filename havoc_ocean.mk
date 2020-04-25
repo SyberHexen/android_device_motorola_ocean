@@ -29,6 +29,11 @@ PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
     ro.telephony.default_network \
     ro.vendor.telephony.default_network
 
+# Official Havoc-OS
+export HAVOC_BUILD_TYPE := Official
+export HAVOC_MAINTAINER := Andrew Hexen (SyberHexen)
+export HAVOC_GROUP_URL := https://t.me/havoc_ocean
+
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := ocean
 PRODUCT_MANUFACTURER := motorola
