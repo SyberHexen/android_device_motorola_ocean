@@ -506,6 +506,12 @@
 
     <path name="compress-voip-call speaker">
         <path name="compress-voip-call" />
+        <path name="speaker" />
+    </path>
+
+    <path name="compress-voip-call speaker-and-headphones">
+        <path name="compress-voip-call speaker" />
+        <path name="headphones" />
     </path>
 
 	<path name="compress-voip-call bt-sco">
@@ -513,15 +519,15 @@
 		<ctl name="Voip_Tx Mixer SEC_AUX_PCM_TX_Voip" value="1" />
 	</path>
 
-	<path name="compress-voip-call bt-sco-wb">
-		<ctl name="BT SampleRate" value="KHZ_16" />
-		<path name="compress-voip-call bt-sco" />
-	</path>
+    <path name="compress-voip-call bt-sco-wb">
+        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
+        <path name="compress-voip-call bt-sco" />
+    </path>
 
-	<path name="compress-voip-call afe-proxy">
-		<ctl name="AFE_PCM_RX_Voice Mixer Voip" value="1" />
-		<ctl name="Voip_Tx Mixer AFE_PCM_TX_Voip" value="1" />
-	</path>
+    <path name="compress-voip-call afe-proxy">
+        <ctl name="AFE_PCM_RX_Voice Mixer Voip" value="1" />
+        <ctl name="Voip_Tx Mixer AFE_PCM_TX_Voip" value="1" />
+    </path>
 
     <path name="multi-channel-playback afe-proxy">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia2" value="1" />
