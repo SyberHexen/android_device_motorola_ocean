@@ -762,8 +762,8 @@
 
 	<path name="speaker">
 		<ctl name="SLIM_0_RX Channels" value="One" />
-		<ctl name="SPK AMP PCM Gain" value="17" />
-		<ctl name="AIF1TX1 Input 1 Volume" value="32" />
+		<ctl name="SPK AMP PCM Gain" value="18" />
+		<ctl name="AIF1TX1 Input 1 Volume" value="36" />
 		<ctl name="SPK PCM Source" value="DSP" />
 		<ctl name="AIF1TX1 Input 1" value="SLIMRX1" />
 		<ctl name="SPK AMP Enable Switch" value="1" />
