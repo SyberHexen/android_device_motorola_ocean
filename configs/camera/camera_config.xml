@@ -87,33 +87,33 @@ LensInfo : Information of the lens present in the module.
   <CameraModuleConfig>
     <CameraId>0</CameraId>
     <SensorName>mot_ov12a10</SensorName>
-    <ActuatorName>lc898217xh</ActuatorName>
-    <EepromName>mot_gt24p64b</EepromName>
     <FlashName>pmic</FlashName>
-    <ChromatixName>mot_ov12a10_chromatix</ChromatixName>
+    <EepromName>mot_dw9767</EepromName>
+    <ActuatorName>dw9767</ActuatorName>
+    <ChromatixName>ov12a10_ocean_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK</Position>
     <MountAngle>90</MountAngle>
     <CSIInfo>
-      <CSIDCore>1</CSIDCore>
+      <CSIDCore>0</CSIDCore>
       <LaneMask>0x1F</LaneMask>
       <LaneAssign>0x4320</LaneAssign>
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>3.95</FocalLength>
-      <FNumber>1.8</FNumber>
-      <TotalFocusDistance>1.9</TotalFocusDistance>
-      <HorizontalViewAngle>64.1</HorizontalViewAngle>
-      <VerticalViewAngle>50.2</VerticalViewAngle>
+      <FocalLength>3.88</FocalLength>
+      <FNumber>2.0</FNumber>
+      <TotalFocusDistance>1.0</TotalFocusDistance>
+      <HorizontalViewAngle>65.6</HorizontalViewAngle>
+      <VerticalViewAngle>51.6</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
   <CameraModuleConfig>
     <CameraId>1</CameraId>
     <SensorName>s5k4h7</SensorName>
-    <EepromName>s5k4h7</EepromName>
-    <ChromatixName>mot_s5k4h7_chromatix</ChromatixName>
+<EepromName>s5k4h7</EepromName>
+    <ChromatixName>s5k4h7_ocean_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>FRONT</Position>
     <MountAngle>270</MountAngle>
@@ -129,30 +129,7 @@ LensInfo : Information of the lens present in the module.
       <TotalFocusDistance>1.2</TotalFocusDistance>
       <HorizontalViewAngle>67.9</HorizontalViewAngle>
       <VerticalViewAngle>53.5</VerticalViewAngle>
-      <MinFocusDistance>0.3</MinFocusDistance>
+      <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
-  <CameraModuleConfig>
-    <CameraId>2</CameraId>
-    <SensorName>mot_s5k5e9</SensorName>
-    <EepromName>mot_s5k5e9</EepromName>
-    <ChromatixName>mot_s5k5e9_chromatix</ChromatixName>
-    <ModesSupported>1</ModesSupported>
-    <Position>BACK_AUX</Position>
-    <MountAngle>90</MountAngle>
-    <CSIInfo>
-      <CSIDCore>0</CSIDCore>
-      <LaneMask>0x7</LaneMask>
-      <LaneAssign>0x4320</LaneAssign>
-      <ComboMode>0</ComboMode>
-    </CSIInfo>
-    <LensInfo>
-      <FocalLength>1.98</FocalLength>
-      <FNumber>2.2</FNumber>
-      <TotalFocusDistance>1.2</TotalFocusDistance>
-      <HorizontalViewAngle>70.1</HorizontalViewAngle>
-      <VerticalViewAngle>55.6</VerticalViewAngle>
-      <MinFocusDistance>0.5</MinFocusDistance>
-    </LensInfo>
-  </CameraModuleConfig>
-</CameraConfigurationRoot>
+  </CameraConfigurationRoot>

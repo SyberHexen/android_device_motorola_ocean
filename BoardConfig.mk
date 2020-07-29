@@ -17,24 +17,27 @@
 # Inherit from motorola sdm632-common
 -include device/motorola/sdm632-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/river
+DEVICE_PATH := device/motorola/ocean
 
 # Assertions
-TARGET_OTA_ASSERT_DEVICE := river
+TARGET_OTA_ASSERT_DEVICE := ocean
+
+# Audio
+AUDIO_FEATURE_ENABLE_TFA98XX_FEEDBACK := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := river_defconfig
+TARGET_KERNEL_CONFIG := ocean_defconfig
 
 # NFC
 BOARD_NFC_CHIPSET := pn553
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432        #    32768 * 1024 mmcblk0p41-42
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2952790016    #  2883584 * 1024 mmcblk0p62-63
-BOARD_VENDORIMAGE_PARTITION_SIZE := 861507584     #   841316 * 1024 mmcblk0p60-61
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2885681152    #  2818048 * 1024 mmcblk0p62-63
+BOARD_VENDORIMAGE_PARTITION_SIZE := 603979776     #   589824 * 1024 mmcblk0p60-61
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # inherit from the proprietary version
--include vendor/motorola/river/BoardConfigVendor.mk
+-include vendor/motorola/ocean/BoardConfigVendor.mk

@@ -24,7 +24,7 @@ fi
 set -e
 
 # Required!
-export DEVICE=river
+export DEVICE=ocean
 export DEVICE_COMMON=sdm632-common
 export VENDOR=motorola
 

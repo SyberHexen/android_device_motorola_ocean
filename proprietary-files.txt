@@ -1,123 +1,53 @@
 # Audio ACDB
-vendor/etc/acdbdata/Bluetooth_cal.acdb
-vendor/etc/acdbdata/General_cal.acdb
-vendor/etc/acdbdata/Global_cal.acdb
-vendor/etc/acdbdata/Handset_cal.acdb
-vendor/etc/acdbdata/Hdmi_cal.acdb
-vendor/etc/acdbdata/Headset_cal.acdb
-vendor/etc/acdbdata/Speaker_cal.acdb
-
-# Audio - Speaker Protection Firmwares
-vendor/firmware/cs35l41-dsp1-spk-cali.bin
-vendor/firmware/cs35l41-dsp1-spk-cali-na.bin
-vendor/firmware/cs35l41-dsp1-spk-diag.wmfw
-vendor/firmware/cs35l41-dsp1-spk-prot.bin
-vendor/firmware/cs35l41-dsp1-spk-prot-na.bin
-vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
+vendor/etc/acdbdata/common/Bluetooth_cal.acdb
+vendor/etc/acdbdata/common/General_cal.acdb
+vendor/etc/acdbdata/common/Global_cal.acdb
+vendor/etc/acdbdata/common/Handset_cal.acdb
+vendor/etc/acdbdata/common/Hdmi_cal.acdb
+vendor/etc/acdbdata/common/Headset_cal.acdb
+vendor/etc/acdbdata/common/Speaker_cal.acdb
+vendor/etc/acdbdata/na/Bluetooth_cal.acdb
+vendor/etc/acdbdata/na/General_cal.acdb
+vendor/etc/acdbdata/na/Global_cal.acdb
+vendor/etc/acdbdata/na/Handset_cal.acdb
+vendor/etc/acdbdata/na/Hdmi_cal.acdb
+vendor/etc/acdbdata/na/Headset_cal.acdb
+vendor/etc/acdbdata/na/Speaker_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
 
 # Display calib
-vendor/etc/qdcm_calib_data_mipi_mot_vid_boe_1080p_624.xml|5ffff6f0ed89bad0883d1a8f6b8eac1fab27555a
-vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_624.xml|3539bafaf833fcb2352524ad83915b8a9d3a908c
-vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_h_1080p_624.xml|3539bafaf833fcb2352524ad83915b8a9d3a908c
-vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_n_1080p_624.xml|3539bafaf833fcb2352524ad83915b8a9d3a908c
+vendor/etc/qdcm_calib_data_mipi_mot_vid_csot_720p_622.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_ofilm_720p_622.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_720p_622.xml
 
 # Display Panel Firmwares
-vendor/firmware/himax-boe-hx83112a-0a05-208-river.bin
-vendor/firmware/himax-boe-hx83112a-river.csv
-vendor/firmware/himax-tianmah-hx83112a-0500-208-river.bin
-vendor/firmware/himax-tianmah-hx83112a-river.csv
-vendor/firmware/novatek_ts-tianman-NT36672A-181127-0b-river.bin
+vendor/firmware/focaltech-ofilm-ft8006u-0e-001-ocean.bin
+vendor/firmware/ilitek-tianma-ILI9881-1c-69-ocean.bin
+vendor/firmware/novatek_ts-csot-NT36672A-180919-07-ocean.bin
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc
-vendor/etc/init/init.ets.rc
-vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so
-vendor/lib64/libets_fp_et5.so
-vendor/lib64/libets_teeclient.so
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
+vendor/lib64/com.fingerprints.extension@1.0.so
 
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleCS47L35/HotwordEnrollmentOKGoogleCS47L35.apk
--product/priv-app/HotwordEnrollmentTGoogleCS47L35/HotwordEnrollmentTGoogleCS47L35.apk
--product/priv-app/HotwordEnrollmentXGoogleCS47L35/HotwordEnrollmentXGoogleCS47L35.apk
+# FocalTech Touch Firmware
+vendor/firmware/FT8006U_Pramboot.bin
 
-# NFC
-vendor/lib64/libpn553_fw.so
+# NFC Firmware
+vendor/firmware/st21nfc_fw.bin
 
-# Vibrator Firmwares
-vendor/firmware/aw869x_haptic.bin
-vendor/firmware/aw869x_rtp_Argo_Navis.bin
-vendor/firmware/aw869x_rtp_Attentive.bin
-vendor/firmware/aw869x_rtp_Awake.bin
-vendor/firmware/aw869x_rtp.bin
-vendor/firmware/aw869x_rtp_Bird_Loop.bin
-vendor/firmware/aw869x_rtp_Brilliant_Times.bin
-vendor/firmware/aw869x_rtp_Chimey_Phone.bin
-vendor/firmware/aw869x_rtp_Complex.bin
-vendor/firmware/aw869x_rtp_Crazy_Dream.bin
-vendor/firmware/aw869x_rtp_Curve_Ball_Blend.bin
-vendor/firmware/aw869x_rtp_Digital_Phone.bin
-vendor/firmware/aw869x_rtp_Electrovision.bin
-vendor/firmware/aw869x_rtp_Ether_Shake.bin
-vendor/firmware/aw869x_rtp_Fateful_Words.bin
-vendor/firmware/aw869x_rtp_Flutey_Phone.bin
-vendor/firmware/aw869x_rtp_Future_Funk.bin
-vendor/firmware/aw869x_rtp_Future_Hi_Tech.bin
-vendor/firmware/aw869x_rtp_Girtab.bin
-vendor/firmware/aw869x_rtp_Hello.bin
-vendor/firmware/aw869x_rtp_Hexagon.bin
-vendor/firmware/aw869x_rtp_Hydra.bin
-vendor/firmware/aw869x_rtp_Insert_Coin.bin
-vendor/firmware/aw869x_rtp_Jumping_Dots.bin
-vendor/firmware/aw869x_rtp_Keys.bin
-vendor/firmware/aw869x_rtp_Loopy.bin
-vendor/firmware/aw869x_rtp_Loopy_Lounge.bin
-vendor/firmware/aw869x_rtp_Modular.bin
-vendor/firmware/aw869x_rtp_Momentum.bin
-vendor/firmware/aw869x_rtp_Morning.bin
-vendor/firmware/aw869x_rtp_Moto.bin
-vendor/firmware/aw869x_rtp_Natural.bin
-vendor/firmware/aw869x_rtp_New_Player.bin
-vendor/firmware/aw869x_rtp_Onward.bin
-vendor/firmware/aw869x_rtp_Organ_Dub.bin
-vendor/firmware/aw869x_rtp_Overclocked.bin
-vendor/firmware/aw869x_rtp_Pegasus.bin
-vendor/firmware/aw869x_rtp_Pyxis.bin
-vendor/firmware/aw869x_rtp_Regrade.bin
-vendor/firmware/aw869x_rtp_Scarabaeus.bin
-vendor/firmware/aw869x_rtp_Sceptrum.bin
-vendor/firmware/aw869x_rtp_Simple.bin
-vendor/firmware/aw869x_rtp_Solarium.bin
-vendor/firmware/aw869x_rtp_Sparse.bin
-vendor/firmware/aw869x_rtp_Terrabytes.bin
+# Proximity Sensor Firmware
+vendor/firmware/AbovCapSense.BIN
+
+# Sound Card - tfa98xx
+vendor/firmware/tfa98xx.cnt
 
 # Misc Firmware
-vendor/firmware/crus_sp_rx0.bin
-vendor/firmware/crus_sp_rx1.bin
-vendor/firmware/crus_sp_rx2.bin
-vendor/firmware/crus_sp_rx3.bin
-vendor/firmware/crus_sp_rx4.bin
-vendor/firmware/crus_sp_rx5.bin
-vendor/firmware/crus_sp_rx6.bin
-vendor/firmware/crus_sp_rx7.bin
-
-# Sound Card - Marley Firmware
-vendor/firmware/marley-dsp1-ultrasound.bin
-vendor/firmware/marley-dsp1-ultrasound.wmfw
-vendor/firmware/marley-dsp2-aov-frontend.wmfw
-vendor/firmware/marley-dsp2-aov-vrgain.bin
-vendor/firmware/marley-dsp3-aov-control.wmfw
-
-# Sound Trigger
-vendor/lib/hw/sound_trigger.primary.default.so
-
-# Moto ADSP Hal - (Sound Trigger Dependencies)
-vendor/bin/hw/motorola.hardware.audio.adspd@1.0-service
-vendor/etc/init/motorola.hardware.audio.adspd@1.0-service.rc
-vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so
-vendor/lib/motorola.hardware.audio.adspd@1.0_vendor.so
-vendor/lib/motorola.hardware.audio.adspd@1.0.so
-vendor/lib64/vndk/libtinyalsa.so
-vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so
-vendor/lib64/motorola.hardware.audio.adspd@1.0.so
+vendor/firmware/leia_pfp_470.fw
+vendor/firmware/leia_pm4_470.fw
 

@@ -25,5 +25,5 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on init && property:ro.boot.hardware.sku=XT1962-5
+on init && property:ro.boot.hardware.sku=XT1955-7
     setprop ro.boot.product.hardware.sku nfc

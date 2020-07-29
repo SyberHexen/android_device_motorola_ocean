@@ -1,5 +1,5 @@
 
-Device configuration for Motorola g7 (river)
+Device configuration for Motorola g7 power (ocean)
 ==================================
 
 Basic   | Spec Sheet

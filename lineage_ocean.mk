@@ -22,18 +22,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from river device
+# Inherit from ocean device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := motorola
-PRODUCT_DEVICE := river
+PRODUCT_DEVICE := ocean
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_NAME := lineage_river
-PRODUCT_MODEL := moto g(7)
+PRODUCT_NAME := lineage_ocean
+PRODUCT_MODEL := moto g(7) power
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        PRODUCT_NAME=river \
-        PRIVATE_BUILD_DESC="river-user 9 PPOS29.114-134-4 fe214 release-keys"
+        PRODUCT_NAME=ocean \
+        PRIVATE_BUILD_DESC="ocean-user 9 PPO29.114-134 fee207 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := motorola/river/river:9/PPOS29.114-134-4/fe214:user/release-keys
+BUILD_FINGERPRINT := motorola/ocean/ocean:9/PPO29.114-134/fee207:user/release-keys

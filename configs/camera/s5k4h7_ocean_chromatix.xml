@@ -79,35 +79,35 @@ special_mode_mask values:
 <ChromatixConfigurationRoot>
   <CommonChromatixInfo>
     <ChromatixName>
-      <ISPCommon>mot_s5k4h7_common</ISPCommon>
-      <PostProc>mot_s5k4h7_postproc</PostProc>
+      <ISPCommon>s5k4h7_ocean_common</ISPCommon>
+      <PostProc>s5k4h7_ocean_postproc</PostProc>
     </ChromatixName>
     <ChromatixName special_mode_mask="MOT_CPP_CUSTOM">
-      <CPPSnapshot>mot_s5k4h7_cpp_snapshot_custom</CPPSnapshot>
+      <CPPSnapshot>s5k4h7_ocean_cpp_snapshot_custom</CPPSnapshot>
     </ChromatixName>
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
     <ChromatixName sensor_resolution_index="0">
-      <ISPPreview>mot_s5k4h7_snapshot</ISPPreview>
-      <ISPSnapshot>mot_s5k4h7_snapshot</ISPSnapshot>
-      <ISPVideo>mot_s5k4h7_video_full</ISPVideo>
-      <CPPVideo>mot_s5k4h7_cpp_video_full</CPPVideo>
-      <CPPPreview>mot_s5k4h7_cpp_preview</CPPPreview>
-      <CPPSnapshot>mot_s5k4h7_cpp_snapshot</CPPSnapshot>
-      <CPPLiveshot>mot_s5k4h7_cpp_liveshot</CPPLiveshot>
-      <A3Preview>mot_s5k4h7_zsl_preview_3a</A3Preview>
-      <A3Video>mot_s5k4h7_zsl_video_3a</A3Video>
+      <ISPPreview>s5k4h7_ocean_snapshot</ISPPreview>
+      <ISPSnapshot>s5k4h7_ocean_snapshot</ISPSnapshot>
+      <ISPVideo>s5k4h7_ocean_video_full</ISPVideo>
+      <CPPVideo>s5k4h7_ocean_cpp_video_full</CPPVideo>
+      <CPPPreview>s5k4h7_ocean_cpp_preview</CPPPreview>
+      <CPPSnapshot>s5k4h7_ocean_cpp_snapshot</CPPSnapshot>
+      <CPPLiveshot>s5k4h7_ocean_cpp_liveshot</CPPLiveshot>
+      <A3Preview>s5k4h7_ocean_zsl_preview_3a</A3Preview>
+      <A3Video>s5k4h7_ocean_zsl_video_3a</A3Video>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="1">
-      <ISPPreview>mot_s5k4h7_hfr_120</ISPPreview>
-      <ISPSnapshot>mot_s5k4h7_hfr_120</ISPSnapshot>
-      <ISPVideo>mot_s5k4h7_hfr_120</ISPVideo>
-      <CPPVideo>mot_s5k4h7_cpp_hfr_120</CPPVideo>
-      <CPPPreview>mot_s5k4h7_cpp_hfr_120</CPPPreview>
-      <CPPSnapshot>mot_s5k4h7_cpp_hfr_120</CPPSnapshot>
-      <CPPLiveshot>mot_s5k4h7_cpp_hfr_120</CPPLiveshot>
-      <A3Preview>mot_s5k4h7_hfr_120_3a</A3Preview>
-      <A3Video>mot_s5k4h7_hfr_120_3a</A3Video>
+      <ISPPreview>s5k4h7_ocean_hfr_120</ISPPreview>
+      <ISPSnapshot>s5k4h7_ocean_hfr_120</ISPSnapshot>
+      <ISPVideo>s5k4h7_ocean_hfr_120</ISPVideo>
+      <CPPVideo>s5k4h7_ocean_cpp_hfr_120</CPPVideo>
+      <CPPPreview>s5k4h7_ocean_cpp_hfr_120</CPPPreview>
+      <CPPSnapshot>s5k4h7_ocean_cpp_hfr_120</CPPSnapshot>
+      <CPPLiveshot>s5k4h7_ocean_cpp_hfr_120</CPPLiveshot>
+      <A3Preview>s5k4h7_ocean_hfr_120_3a</A3Preview>
+      <A3Video>s5k4h7_ocean_hfr_120_3a</A3Video>
     </ChromatixName>
   </ResolutionChromatixInfo>
 </ChromatixConfigurationRoot>

@@ -79,49 +79,49 @@ special_mode_mask values:
 <ChromatixConfigurationRoot>
   <CommonChromatixInfo>
     <ChromatixName special_mode_mask="0">
-      <ISPCommon>mot_ov12a10_common</ISPCommon>
-      <PostProc>mot_ov12a10_postproc</PostProc>
+      <ISPCommon>ov12a10_ocean_common</ISPCommon>
+      <PostProc>ov12a10_ocean_postproc</PostProc>
     </ChromatixName>
     <ChromatixName special_mode_mask="MOT_CPP_CUSTOM">
-      <CPPSnapshot>mot_ov12a10_cpp_snapshot_custom</CPPSnapshot>
+      <CPPSnapshot>ov12a10_ocean_cpp_snapshot_custom</CPPSnapshot>
     </ChromatixName>
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
     <ChromatixName sensor_resolution_index="0" special_mode_mask="0">
-      <ISPPreview>mot_ov12a10_preview</ISPPreview>
-      <ISPSnapshot>mot_ov12a10_snapshot</ISPSnapshot>
-      <ISPVideo>mot_ov12a10_default_video</ISPVideo>
-      <CPPPreview>mot_ov12a10_cpp_preview</CPPPreview>
-      <CPPSnapshot>mot_ov12a10_cpp_snapshot</CPPSnapshot>
-      <CPPVideo>mot_ov12a10_cpp_video</CPPVideo>
-      <CPPLiveshot>mot_ov12a10_cpp_liveshot</CPPLiveshot>
-      <A3Preview>mot_ov12a10_zsl_preview_3a</A3Preview>
-      <A3Video>mot_ov12a10_zsl_video_3a</A3Video>
+      <ISPPreview>ov12a10_ocean_preview</ISPPreview>
+      <ISPSnapshot>ov12a10_ocean_snapshot</ISPSnapshot>
+      <ISPVideo>ov12a10_ocean_default_video</ISPVideo>
+      <CPPPreview>ov12a10_ocean_cpp_preview</CPPPreview>
+      <CPPSnapshot>ov12a10_ocean_cpp_snapshot</CPPSnapshot>
+      <CPPVideo>ov12a10_ocean_cpp_video</CPPVideo>
+      <CPPLiveshot>ov12a10_ocean_cpp_liveshot</CPPLiveshot>
+      <A3Preview>ov12a10_ocean_zsl_preview_3a</A3Preview>
+      <A3Video>ov12a10_ocean_zsl_video_3a</A3Video>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="0" special_mode_mask="ZOOM_DOWNSCALE">
-      <CPPSnapshot>mot_ov12a10_cpp_snapshot_downscale</CPPSnapshot>
+      <CPPSnapshot>ov12a10_ocean_cpp_snapshot_downscale</CPPSnapshot>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="1" special_mode_mask="0">
-      <ISPPreview>mot_ov12a10_hfr_60</ISPPreview>
-      <ISPSnapshot>mot_ov12a10_hfr_60</ISPSnapshot>
-      <ISPVideo>mot_ov12a10_hfr_60</ISPVideo>
-      <CPPPreview>mot_ov12a10_cpp_hfr_60</CPPPreview>
-      <CPPSnapshot>mot_ov12a10_cpp_hfr_60</CPPSnapshot>
-      <CPPVideo>mot_ov12a10_cpp_hfr_60</CPPVideo>
-      <CPPLiveshot>mot_ov12a10_cpp_hfr_60</CPPLiveshot>
-      <A3Preview>mot_ov12a10_hfr_60_3a</A3Preview>
-      <A3Video>mot_ov12a10_hfr_60_3a</A3Video>
+      <ISPPreview>ov12a10_ocean_hfr_60</ISPPreview>
+      <ISPSnapshot>ov12a10_ocean_hfr_60</ISPSnapshot>
+      <ISPVideo>ov12a10_ocean_hfr_60</ISPVideo>
+      <CPPPreview>ov12a10_ocean_cpp_hfr_60</CPPPreview>
+      <CPPSnapshot>ov12a10_ocean_cpp_hfr_60</CPPSnapshot>
+      <CPPVideo>ov12a10_ocean_cpp_hfr_60</CPPVideo>
+      <CPPLiveshot>ov12a10_ocean_cpp_hfr_60</CPPLiveshot>
+      <A3Preview>ov12a10_ocean_hfr_60_3a</A3Preview>
+      <A3Video>ov12a10_ocean_hfr_60_3a</A3Video>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="2" special_mode_mask="0">
-      <ISPPreview>mot_ov12a10_hfr_120</ISPPreview>
-      <ISPSnapshot>mot_ov12a10_hfr_120</ISPSnapshot>
-      <ISPVideo>mot_ov12a10_hfr_120</ISPVideo>
-      <CPPPreview>mot_ov12a10_cpp_hfr_120</CPPPreview>
-      <CPPSnapshot>mot_ov12a10_cpp_hfr_120</CPPSnapshot>
-      <CPPVideo>mot_ov12a10_cpp_hfr_120</CPPVideo>
-      <CPPLiveshot>mot_ov12a10_cpp_hfr_120</CPPLiveshot>
-      <A3Preview>mot_ov12a10_hfr_120_3a</A3Preview>
-      <A3Video>mot_ov12a10_hfr_120_3a</A3Video>
+      <ISPPreview>ov12a10_ocean_hfr_120</ISPPreview>
+      <ISPSnapshot>ov12a10_ocean_hfr_120</ISPSnapshot>
+      <ISPVideo>ov12a10_ocean_hfr_120</ISPVideo>
+      <CPPPreview>ov12a10_ocean_cpp_hfr_120</CPPPreview>
+      <CPPSnapshot>ov12a10_ocean_cpp_hfr_120</CPPSnapshot>
+      <CPPVideo>ov12a10_ocean_cpp_hfr_120</CPPVideo>
+      <CPPLiveshot>ov12a10_ocean_cpp_hfr_120</CPPLiveshot>
+      <A3Preview>ov12a10_ocean_hfr_120_3a</A3Preview>
+      <A3Video>ov12a10_ocean_hfr_120_3a</A3Video>
     </ChromatixName>
   </ResolutionChromatixInfo>
 </ChromatixConfigurationRoot>
