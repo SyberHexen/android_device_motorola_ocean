@@ -14,6 +14,18 @@ load_panel()
             insmod /vendor/lib/modules/focaltech_mmi.ko
             ;;
         tianma)
+            insmod /vendor/lib/modules/focaltech_mmi.ko
+            insmod /vendor/lib/modules/ilitek_mmi.ko
+            rmmod /vendor/lib/modules/ilitek_mmi.ko
+            insmod /vendor/lib/modules/ilitek_mmi.ko
+            rmmod /vendor/lib/modules/ilitek_mmi.ko
+            insmod /vendor/lib/modules/ilitek_mmi.ko
+            rmmod /vendor/lib/modules/ilitek_mmi.ko
+            insmod /vendor/lib/modules/ilitek_mmi.ko
+            rmmod /vendor/lib/modules/ilitek_mmi.ko
+            insmod /vendor/lib/modules/ilitek_mmi.ko
+            rmmod /vendor/lib/modules/ilitek_mmi.ko
+            wait 6
             insmod /vendor/lib/modules/ilitek_mmi.ko
             ;;
         csot)
