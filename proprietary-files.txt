@@ -1,3 +1,14 @@
+# Audio - Prebuilt
+vendor/lib/libadm.so
+vendor/lib/liblog_vendor.so
+vendor/lib/libmotaudioutils.so
+vendor/lib/libsensorndkbridge.so
+vendor/lib/libtinycompress_vendor.so
+vendor/lib/hw/audio.primary.msm8953.so
+vendor/lib/soundfx/libspeakerbundle.so
+vendor/lib/soundfx/libmmieffectswrapper.so
+vendor/lib/vndk/libtinyalsa.so
+
 # Audio ACDB
 vendor/etc/acdbdata/common/Bluetooth_cal.acdb
 vendor/etc/acdbdata/common/General_cal.acdb
