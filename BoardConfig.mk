@@ -23,7 +23,7 @@ DEVICE_PATH := device/motorola/ocean
 TARGET_OTA_ASSERT_DEVICE := ocean
 
 # Audio
-AUDIO_FEATURE_ENABLE_TFA98XX_FEEDBACK := true
+# AUDIO_FEATURE_ENABLE_TFA98XX_FEEDBACK := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := ocean_defconfig
