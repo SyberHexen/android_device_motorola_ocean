@@ -26,4 +26,4 @@
 #
 
 on init && property:ro.boot.hardware.sku=XT1955-7
-    setprop ro.boot.product.hardware.sku nfc
+    setprop ro.boot.product.hardware.sku nfc-st
