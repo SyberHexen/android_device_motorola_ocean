@@ -27,3 +27,34 @@
 
 on init && property:ro.boot.hardware.sku=XT1955-7
     setprop ro.boot.product.hardware.sku nfc-st
+    setprop ro.radio.imei.sv 33
+    setprop ro.telephony.default_network "10,10"
+    setprop ro.vendor.telephony.default_network "10,10"
+
+on property:ro.boot.hardware.sku=XT1955-1
+    setprop ro.radio.imei.sv 33
+    setprop ro.telephony.default_network "10,10"
+    setprop ro.vendor.telephony.default_network "10,10"
+
+on property:ro.boot.hardware.sku=XT1955-2
+    setprop ro.radio.imei.sv 33
+    setprop ro.telephony.default_network "10,10"
+    setprop ro.vendor.telephony.default_network "10,10"
+
+on property:ro.boot.hardware.sku=XT1955-4
+    setprop ro.radio.imei.sv 33
+    setprop ro.telephony.default_network "10,10"
+    setprop ro.vendor.telephony.default_network "10,10"
+
+on property:ro.boot.hardware.sku=XT1955-5
+    setprop ro.radio.imei.sv 37
+    setprop ro.telephony.default_network "10,10"
+    setprop ro.vendor.telephony.default_network "10,10"
+
+# VZW
+on property:ro.boot.hardware.sku=XT1955-6
+    setprop ro.radio.imei.sv 10
+    setprop ro.telephony.default_network 10
+    setprop ro.vendor.telephony.default_network 10
+    setprop persist.radio.plmn_name_cmp 1
+    setprop persist.vendor.radio.customer_mbns "vzw_usa.mbn;super.mbn;vzw_visible.mbn"
