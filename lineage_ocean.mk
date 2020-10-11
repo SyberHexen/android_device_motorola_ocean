@@ -25,6 +25,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from ocean device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
+    ro.telephony.default_network \
+    ro.vendor.telephony.default_network
+
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := ocean
 PRODUCT_MANUFACTURER := motorola
