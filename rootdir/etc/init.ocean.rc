@@ -26,7 +26,7 @@
 #
 
 on init && property:ro.boot.hardware.sku=XT1955-7
-    setprop ro.boot.product.hardware.sku nfc-st
+    setprop ro.boot.product.hardware.sku nfc
     setprop ro.radio.imei.sv 33
     setprop ro.telephony.default_network "10,10"
     setprop ro.vendor.telephony.default_network "10,10"
