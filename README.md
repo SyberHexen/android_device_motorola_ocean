@@ -25,14 +25,6 @@ Front Camera | 8 MP 1.12µm, HDR
 TAG: MMI-PPO29
 https://github.com/MotorolaMobilityLLC/kernel-msm/tree/pie-9.0.0-release-ppo29
 ```
-
-### Build with TWRP installer
-To auotomatic make the twrp installer, 
-you need to import this commit in the build path
-
-```sh
-https://gerrit.omnirom.org/#/c/android_build/+/33182/
-```
 ### How to compile
 
 ```sh
@@ -42,6 +34,19 @@ export LC_ALL=C
 lunch omni_ocean-eng
 mka adbd recoveryimage
 ```
+
+### Build with TWRP installer
+
+To automatically make the twrp installer, you need to import this commit in the build/make path:
+```sh
+https://gerrit.omnirom.org/#/c/android_build/+/33182/
+```
+
+Then add @osm0sis' standard twrp_abtemplate repo to a local manifest as indicated below (followed by another `repo sync` to download the repo):
+```xml
+<project name="osm0sis/twrp_abtemplate" path="bootable/recovery/installer" remote="github" revision="master"/>
+```
+
 ### Copyright
  ```
   /*
