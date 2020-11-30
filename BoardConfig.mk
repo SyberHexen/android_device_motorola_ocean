@@ -38,9 +38,18 @@ TARGET_BOARD_PLATFORM := msm8953
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci androidboot.usbconfigfs=true
-BOARD_KERNEL_CMDLINE += androidboot.hab.csv=1 androidboot.hab.product=ocean androidboot.hab.cid=50 androidboot.selinux=permissive
-BOARD_KERNEL_CMDLINE += androidboot.fastboot=1
+BOARD_KERNEL_CMDLINE := \
+    androidboot.hardware=qcom \
+    msm_rtb.filter=0x237 \
+    ehci-hcd.park=3 \
+    androidboot.bootdevice=7824900.sdhci \
+    androidboot.usbconfigfs=true \
+    androidboot.hab.csv=1 \
+    androidboot.hab.product=ocean \
+    androidboot.hab.cid=50 \
+    androidboot.selinux=permissive \
+    androidboot.fastboot=1
+
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
@@ -55,11 +64,6 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
-ifeq ($(strip $(TARGET_PREBUILT_KERNEL)),)
-TARGET_KERNEL_CONFIG := ocean_defconfig
-TARGET_KERNEL_SOURCE := kernel/motorola/sdm632
-endif
-
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432        #    32768 * 1024 mmcblk0p41-42
@@ -72,31 +76,72 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# Platform
-PLATFORM_VERSION := 16.1.0
-PLATFORM_SECURITY_PATCH := 2030-01-01
-
-# Crypto
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_CRYPTO_FBE := true
-
 # TWRP
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_INCLUDE_REPACKTOOLS := true
 TW_NEW_ION_HEAP := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi
-TW_USE_TOOLBOX := true
 TW_Y_OFFSET := 53
 TW_H_OFFSET := -53
+
+TARGET_RECOVERY_DEVICE_MODULES += \
+    android.hidl.base@1.0 \
+    libicuuc \
+    libion \
+    libprocinfo \
+    libxml2
+TW_RECOVERY_ADDITIONAL_RELINK_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.base@1.0.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libicuuc.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libprocinfo.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
+TW_SCREEN_BLANK_ON_BOOT := true
+TW_OVERRIDE_SYSTEM_PROPS := \
+    "ro.build.product;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental;ro.product.device=ro.product.system.device;ro.product.model=ro.product.system.model;ro.product.name=ro.product.system.name"
+
+# Additional binaries & libraries needed for recovery
+TARGET_RECOVERY_DEVICE_MODULES += \
+    android.hidl.base@1.0 \
+    ashmemd_aidl_interface-cpp \
+    libashmemd_client \
+    libcap \
+    libion \
+    libpcrecpp \
+    libxml2
+TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.base@1.0.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/ashmemd_aidl_interface-cpp.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libashmemd_client.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libcap.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libpcrecpp.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
 
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
-# Installer
-AB_OTA_UPDATER := true
+# Encryption
+PLATFORM_VERSION := 16.1.0
+PLATFORM_SECURITY_PATCH := 2099-12-31
+VENDOR_SECURITY_PATCH :=  2099-12-31
+TW_INCLUDE_CRYPTO := true
+BOARD_USES_QCOM_FBE_DECRYPTION := true
+
+# Extras
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+# TWRP specific build flags
+BOARD_SUPPRESS_SECURE_ERASE := true
 USE_RECOVERY_INSTALLER := true
-RECOVERY_INSTALLER_PATH := device/motorola/ocean/installer
+RECOVERY_INSTALLER_PATH := bootable/recovery/installer
+TW_EXCLUDE_TWRPAPP := true
+TW_INCLUDE_REPACKTOOLS := true
+
+# Workaround for error copying vendor files to recovery ramdisk
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR := vendor
