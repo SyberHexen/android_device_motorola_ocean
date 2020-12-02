@@ -34,6 +34,9 @@ on fs
     setprop ro.board.platform msm8953
     start load_modules
 
+on property:ro.crypto.type=file
+    setprop ro.crypto.state encrypted
+
 service load_modules /system/bin/load_modules.sh
     oneshot
     disabled
