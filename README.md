@@ -21,10 +21,8 @@ Front Camera | 8 MP 1.12µm, HDR
 
 ### Kernel Source
 
-```sh
-TAG: MMI-PPO29
-https://github.com/MotorolaMobilityLLC/kernel-msm/tree/pie-9.0.0-release-ppo29
-```
+See /prebuilt/README.md
+
 ### How to compile
 
 ```sh
