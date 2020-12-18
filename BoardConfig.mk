@@ -77,16 +77,6 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# TWRP
-RECOVERY_SDCARD_ON_DATA := true
-TARGET_RECOVERY_QCOM_RTC_FIX := true
-TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_NEW_ION_HEAP := true
-TW_SCREEN_BLANK_ON_BOOT := true
-TW_THEME := portrait_hdpi
-TW_Y_OFFSET := 53
-TW_H_OFFSET := -53
-
 TARGET_RECOVERY_DEVICE_MODULES += \
     android.hidl.base@1.0 \
     libicuuc \
@@ -113,6 +103,7 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libion \
     libpcrecpp \
     libxml2
+
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.base@1.0.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/ashmemd_aidl_interface-cpp.so \
@@ -133,15 +124,24 @@ VENDOR_SECURITY_PATCH :=  2099-12-31
 TW_INCLUDE_CRYPTO := true
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 
-# Extras
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
 # TWRP specific build flags
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+RECOVERY_SDCARD_ON_DATA := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_NEW_ION_HEAP := true
+TW_SCREEN_BLANK_ON_BOOT := true
+TW_THEME := portrait_hdpi
+TW_Y_OFFSET := 53
+TW_H_OFFSET := -53
 BOARD_SUPPRESS_SECURE_ERASE := true
+
+# Extras
 USE_RECOVERY_INSTALLER := true
 RECOVERY_INSTALLER_PATH := bootable/recovery/installer
 TW_EXCLUDE_TWRPAPP := true
 TW_INCLUDE_REPACKTOOLS := true
+TW_HAS_EDL_MODE := true
 
 # Workaround for error copying vendor files to recovery ramdisk
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
