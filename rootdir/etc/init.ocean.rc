@@ -31,6 +31,9 @@ on init && property:ro.boot.hardware.sku=XT1955-7
     setprop ro.telephony.default_network "10,10"
     setprop ro.vendor.telephony.default_network "10,10"
 
+on boot && property:ro.boot.product.hardware.sku=nfc
+    start nfc_hal_service
+
 on property:ro.boot.hardware.sku=XT1955-1
     setprop ro.radio.imei.sv 33
     setprop ro.telephony.default_network "10,10"
@@ -58,3 +61,10 @@ on property:ro.boot.hardware.sku=XT1955-6
     setprop ro.vendor.telephony.default_network 10
     setprop persist.radio.plmn_name_cmp 1
     setprop persist.vendor.radio.customer_mbns "vzw_usa.mbn;super.mbn;vzw_visible.mbn"
+
+service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service.st
+    interface android.hardware.nfc@1.2::INfc default
+    class hal
+    user nfc
+    group nfc
+    disabled
