@@ -24,12 +24,6 @@ vendor/etc/acdbdata/na/Handset_cal.acdb
 vendor/etc/acdbdata/na/Hdmi_cal.acdb
 vendor/etc/acdbdata/na/Headset_cal.acdb
 vendor/etc/acdbdata/na/Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
 
 # Camera
 vendor/lib/libmot_gpu_mapper.so
