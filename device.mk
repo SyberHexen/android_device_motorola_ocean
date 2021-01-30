@@ -78,8 +78,7 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
     SecureElement \
-    android.hardware.nfc@1.2-service.st \
-    android.hardware.secure_element@1.2-service.st-disabled
+    android.hardware.nfc@1.2-service.st
 
 # Sensors
 PRODUCT_COPY_FILES += \
