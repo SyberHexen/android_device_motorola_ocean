@@ -23,6 +23,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.pmd=false \
     ro.vendor.sensors.rmd=false \
     ro.vendor.sensors.scrn_ortn=false \
+    ro.vendor.sensors.smd=false \
     ro.vendor.sensors.sta_detect=true \
     ro.vendor.sensors.glance_approach=false \
     ro.vendor.sensors.glance_cover_to_wake=false \
