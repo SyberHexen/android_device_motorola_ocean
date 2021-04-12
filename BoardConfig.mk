@@ -37,4 +37,4 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 603979776     #   589824 * 1024 mmcblk0p60-6
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # inherit from the proprietary version
--include vendor/motorola/ocean/BoardConfigVendor.mk
+include vendor/motorola/ocean/BoardConfigVendor.mk
