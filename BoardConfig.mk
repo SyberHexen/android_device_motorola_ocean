@@ -98,11 +98,16 @@ TW_OVERRIDE_SYSTEM_PROPS := \
 TARGET_RECOVERY_DEVICE_MODULES += \
     android.hidl.base@1.0 \
     ashmemd_aidl_interface-cpp \
+    bootctrl.$(TARGET_BOARD_PLATFORM).recovery \
     libashmemd_client \
     libcap \
     libion \
     libpcrecpp \
     libxml2
+
+TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += \
+    $(TARGET_OUT_EXECUTABLES)/ashmemd \
+    $(TARGET_OUT_EXECUTABLES)/strace
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.base@1.0.so \
