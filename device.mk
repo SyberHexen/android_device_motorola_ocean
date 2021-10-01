@@ -55,10 +55,6 @@ PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
 
-# tzdata
-PRODUCT_PACKAGES += \
-    tzdata_twrp
-
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
