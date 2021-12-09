@@ -105,6 +105,7 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     ashmemd \
     ashmemd_aidl_interface-cpp \
     bootctrl.$(TARGET_BOARD_PLATFORM).recovery \
+    debuggerd \
     libashmemd_client \
     libcap \
     libion \
@@ -115,6 +116,9 @@ TARGET_RECOVERY_DEVICE_MODULES += \
 TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += \
     $(TARGET_OUT_EXECUTABLES)/ashmemd \
     $(TARGET_OUT_EXECUTABLES)/strace
+
+TW_RECOVERY_ADDITIONAL_RELINK_FILES += \
+    $(TARGET_OUT_EXECUTABLES)/debuggerd
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.base@1.0.so \
