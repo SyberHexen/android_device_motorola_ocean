@@ -38,7 +38,13 @@ TARGET_BOARD_PLATFORM := msm8953
 TARGET_SUPPORTS_64_BIT_APPS := true
 
 # Kernel
-BOARD_KERNEL_BASE := 0x80000000
+BOARD_BOOT_HEADER_VERSION  := 1
+BOARD_HEADER_SIZE          := 1648
+BOARD_KERNEL_BASE          := 0x80000000
+BOARD_KERNEL_TAGS_OFFSET   := 0x00000100
+BOARD_KERNEL_OFFSET        := 0x00008000
+BOARD_KERNEL_SECOND_OFFSET := 0x00f00000
+BOARD_RAMDISK_OFFSET       := 0x01000000
 BOARD_KERNEL_CMDLINE := \
     androidboot.hardware=qcom \
     msm_rtb.filter=0x237 \
@@ -53,17 +59,18 @@ BOARD_KERNEL_CMDLINE := \
 
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 
-# Prebuilt DTBO.img
-BOARD_KERNEL_TAGS_OFFSET := 0x00000100
-BOARD_RAMDISK_OFFSET     := 0x01000000
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_BOOTIMG_HEADER_VERSION := 1
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
+BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
+BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --second_offset $(BOARD_KERNEL_SECOND_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -77,26 +84,25 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-TARGET_RECOVERY_DEVICE_MODULES += \
-    android.hidl.base@1.0 \
-    libicuuc \
-    libion \
-    libprocinfo \
-    libxml2
-TW_RECOVERY_ADDITIONAL_RELINK_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.base@1.0.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libicuuc.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libprocinfo.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
+# TWRP specific build flags
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
+TARGET_RECOVERY_QCOM_RTC_FIX := true
+RECOVERY_SDCARD_ON_DATA := true
+BOARD_SUPPRESS_SECURE_ERASE := true
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_NEW_ION_HEAP := true
 TW_SCREEN_BLANK_ON_BOOT := true
+TW_THEME := portrait_hdpi
+TW_Y_OFFSET := 110
+TW_H_OFFSET := -110
 TW_OVERRIDE_SYSTEM_PROPS := \
     "ro.build.product;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental;ro.product.device=ro.product.system.device;ro.product.model=ro.product.system.model;ro.product.name=ro.product.system.name"
 
 # Additional binaries & libraries needed for recovery
 TARGET_RECOVERY_DEVICE_MODULES += \
     android.hidl.base@1.0 \
+    ashmemd \
     ashmemd_aidl_interface-cpp \
     bootctrl.$(TARGET_BOARD_PLATFORM).recovery \
     libashmemd_client \
@@ -126,23 +132,12 @@ TARGET_USES_LOGD := true
 # Encryption
 PLATFORM_VERSION := 16.1.0
 PLATFORM_SECURITY_PATCH := 2099-12-31
-VENDOR_SECURITY_PATCH :=  2099-12-31
+VENDOR_SECURITY_PATCH := 2099-12-31
 TW_INCLUDE_CRYPTO := true
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 
-# TWRP specific build flags
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-RECOVERY_SDCARD_ON_DATA := true
-TARGET_RECOVERY_QCOM_RTC_FIX := true
-TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_NEW_ION_HEAP := true
-TW_SCREEN_BLANK_ON_BOOT := true
-TW_THEME := portrait_hdpi
-TW_Y_OFFSET := 53
-TW_H_OFFSET := -53
-BOARD_SUPPRESS_SECURE_ERASE := true
-
 # Extras
+ALLOW_MISSING_DEPENDENCIES := true
 USE_RECOVERY_INSTALLER := true
 RECOVERY_INSTALLER_PATH := bootable/recovery/installer
 TW_EXCLUDE_TWRPAPP := true

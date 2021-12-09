@@ -2,3 +2,4 @@ ro.display.series=motorola g(7) power
 ro.product.board=msm8953
 ro.board.platform=msm8953
 vendor.gatekeeper.disable_spu=true
+ro.product.first_api_level=28

@@ -37,8 +37,12 @@ on fs
     setprop ro.board.platform msm8953
     start load_modules
 
+on post-fs
+    start boot-hal-1-0
+
 on property:ro.crypto.type=file
     setprop ro.crypto.state encrypted
+    setprop twrp.apex.loaded true
 
 service load_modules /system/bin/load_modules.sh
     oneshot
