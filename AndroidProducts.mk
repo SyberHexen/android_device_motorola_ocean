@@ -15,4 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_ocean.mk
+    $(LOCAL_DIR)/twrp_ocean.mk
+
+COMMON_LUNCH_CHOICES := \
+    twrp_ocean-user \
+    twrp_ocean-userdebug \
+    twrp_ocean-eng
