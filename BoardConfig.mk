@@ -20,6 +20,7 @@
 DEVICE_PATH := device/motorola/ocean
 
 # Assertions
+TARGET_BOARD_INFO_FILE := device/motorola/ocean/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := ocean
 
 # Audio
