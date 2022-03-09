@@ -36,7 +36,7 @@ PRODUCT_NAME := lineage_ocean
 PRODUCT_MODEL := moto g(7) power
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        PRODUCT_NAME=ocean \
+        TARGET_PRODUCT=ocean_retail \
         PRIVATE_BUILD_DESC="ocean_retail-user 10 QPOS30.52-29-12 401fd release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
