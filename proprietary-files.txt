@@ -1,3 +1,6 @@
+### All blobs from this list, unless pinned and noted as otherwise,
+##  are from motorola/ocean_retail/ocean:10/QPOS30.52-29-12/401fd:user/release-keys
+
 # Audio - Prebuilt
 vendor/lib/libadm.so
 vendor/lib/liblog_vendor.so
