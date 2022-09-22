@@ -25,6 +25,8 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Inherit from ocean device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
     ro.telephony.default_network \
     ro.vendor.telephony.default_network
