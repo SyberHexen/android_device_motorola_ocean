@@ -83,6 +83,7 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # TWRP specific build flags
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
@@ -110,9 +111,18 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libashmemd_client \
     libcap \
     libion \
-    libandroidicu \
     libpcrecpp \
-    libxml2
+    libxml2 \
+    libdisplayconfig.qti \
+    vendor.display.config@1.0 \
+    vendor.display.config@2.0
+
+RECOVERY_LIBRARY_SOURCE_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so \
+    $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/libdisplayconfig.qti.so \
+    $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@1.0.so \
+    $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so
 
 TW_RECOVERY_ADDITIONAL_RELINK_BINARY_FILES += \
     $(TARGET_OUT_EXECUTABLES)/ashmemd \
@@ -130,12 +140,16 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libpcrecpp.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
 
+RECOVERY_BINARY_SOURCE_FILES += \
+    $(TARGET_OUT_EXECUTABLES)/strace \
+    $(TARGET_OUT_EXECUTABLES)/debuggerd
+
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
 # Encryption
-PLATFORM_VERSION := 127
+PLATFORM_VERSION := 16.1.0
 PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
