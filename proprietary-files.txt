@@ -1,16 +1,16 @@
-### All blobs from this list, unless pinned and noted as otherwise,
+## All blobs from this list, unless pinned and noted as otherwise,
 ##  are from motorola/ocean_retail/ocean:10/QPOS30.52-29-12/401fd:user/release-keys
 
 # Audio - Prebuilt
+vendor/lib/hw/audio.primary.msm8953.so
+vendor/lib/soundfx/libmmieffectswrapper.so
+vendor/lib/soundfx/libspeakerbundle.so
+vendor/lib/vndk/libtinyalsa.so
 vendor/lib/libadm.so
 vendor/lib/liblog_vendor.so
 vendor/lib/libmotaudioutils.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/libtinycompress_vendor.so
-vendor/lib/hw/audio.primary.msm8953.so
-vendor/lib/soundfx/libspeakerbundle.so
-vendor/lib/soundfx/libmmieffectswrapper.so
-vendor/lib/vndk/libtinyalsa.so
 
 # Audio ACDB
 vendor/etc/acdbdata/common/Bluetooth_cal.acdb
@@ -33,37 +33,37 @@ vendor/lib/libmot_gpu_mapper.so
 
 # Camera
 vendor/lib/hw/camera.msm8953.so
-vendor/lib/libhal_dbg.so
+vendor/lib/lib_motsensorlistener.so
 vendor/lib/libactuator_dw9763.so
 vendor/lib/libactuator_dw9767.so
 vendor/lib/libactuator_lc898217xh.so
+vendor/lib/libcdsprpc.so
+vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libgralloc1.so
+vendor/lib/libhal_dbg.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmm-qcamera.so
-vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmjpeg.so
+vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmlib2d_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmot_afd.so
 vendor/lib/libmot_lux_standardization.so
 vendor/lib/libmotimager_utils.so
-vendor/lib/lib_motsensorlistener.so
 vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
+vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libdepthmapwrapper.so
 
 # Camera - Chromatix
 vendor/lib/libchromatix_mot_ov12a10_common.so
-vendor/lib/libchromatix_mot_ov12a10_cpp_hfr_60.so
 vendor/lib/libchromatix_mot_ov12a10_cpp_hfr_120.so
+vendor/lib/libchromatix_mot_ov12a10_cpp_hfr_60.so
 vendor/lib/libchromatix_mot_ov12a10_cpp_liveshot.so
 vendor/lib/libchromatix_mot_ov12a10_cpp_preview.so
 vendor/lib/libchromatix_mot_ov12a10_cpp_snapshot.so
@@ -71,10 +71,10 @@ vendor/lib/libchromatix_mot_ov12a10_cpp_snapshot_custom.so
 vendor/lib/libchromatix_mot_ov12a10_cpp_snapshot_downscale.so
 vendor/lib/libchromatix_mot_ov12a10_cpp_video.so
 vendor/lib/libchromatix_mot_ov12a10_default_video.so
-vendor/lib/libchromatix_mot_ov12a10_hfr_60.so
-vendor/lib/libchromatix_mot_ov12a10_hfr_60_3a.so
 vendor/lib/libchromatix_mot_ov12a10_hfr_120.so
 vendor/lib/libchromatix_mot_ov12a10_hfr_120_3a.so
+vendor/lib/libchromatix_mot_ov12a10_hfr_60.so
+vendor/lib/libchromatix_mot_ov12a10_hfr_60_3a.so
 vendor/lib/libchromatix_mot_ov12a10_postproc.so
 vendor/lib/libchromatix_mot_ov12a10_preview.so
 vendor/lib/libchromatix_mot_ov12a10_snapshot.so
@@ -112,18 +112,18 @@ vendor/lib/libchromatix_mot_s5k4h7_video_full.so
 vendor/lib/libchromatix_mot_s5k4h7_zsl_preview_3a.so
 vendor/lib/libchromatix_mot_s5k4h7_zsl_video_3a.so
 vendor/lib/libchromatix_mot_s5k5e9_common.so
-vendor/lib/libchromatix_mot_s5k5e9_cpp_hfr_60.so
 vendor/lib/libchromatix_mot_s5k5e9_cpp_hfr_120.so
+vendor/lib/libchromatix_mot_s5k5e9_cpp_hfr_60.so
 vendor/lib/libchromatix_mot_s5k5e9_cpp_liveshot.so
 vendor/lib/libchromatix_mot_s5k5e9_cpp_preview.so
 vendor/lib/libchromatix_mot_s5k5e9_cpp_snapshot.so
 vendor/lib/libchromatix_mot_s5k5e9_cpp_snapshot_custom.so
 vendor/lib/libchromatix_mot_s5k5e9_cpp_snapshot_downscale.so
 vendor/lib/libchromatix_mot_s5k5e9_cpp_video_full.so
-vendor/lib/libchromatix_mot_s5k5e9_hfr_60.so
-vendor/lib/libchromatix_mot_s5k5e9_hfr_60_3a.so
 vendor/lib/libchromatix_mot_s5k5e9_hfr_120.so
 vendor/lib/libchromatix_mot_s5k5e9_hfr_120_3a.so
+vendor/lib/libchromatix_mot_s5k5e9_hfr_60.so
+vendor/lib/libchromatix_mot_s5k5e9_hfr_60_3a.so
 vendor/lib/libchromatix_mot_s5k5e9_postproc.so
 vendor/lib/libchromatix_mot_s5k5e9_snapshot.so
 vendor/lib/libchromatix_mot_s5k5e9_video_full.so
@@ -301,4 +301,3 @@ vendor/firmware/tfa98xx.cnt
 # Misc Firmware
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
-
