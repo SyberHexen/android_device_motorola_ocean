@@ -37,7 +37,7 @@ PRODUCT_MODEL := moto g(7) power
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=ocean \
-        PRIVATE_BUILD_DESC="ocean-user 9 PPO29.114-134 fee207 release-keys"
+        PRIVATE_BUILD_DESC="ocean_retail-user 10 QPOS30.52-29-12 401fd release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := motorola/ocean/ocean:9/PPO29.114-134/fee207:user/release-keys
+BUILD_FINGERPRINT := "motorola/ocean_retail/ocean:10/QPOS30.52-29-12/401fd:user/release-keys"
