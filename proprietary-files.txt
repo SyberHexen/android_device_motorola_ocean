@@ -295,6 +295,10 @@ vendor/firmware/st21nfc_fw.bin
 # Proximity Sensor Firmware
 vendor/firmware/AbovCapSense.BIN
 
+# Sensors
+vendor/lib/sensors.ssc.so
+vendor/lib64/sensors.ssc.so
+
 # Sound Card - tfa98xx
 vendor/firmware/tfa98xx.cnt
 
