@@ -27,13 +27,13 @@
 
 import /init.recovery.qcom_decrypt.rc
 
-on boot
+on late-fs
+    start keymasterd
     start health-hal-2-1
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    export LD_LIBRARY_PATH /sbin:/vendor/lib64:/vendor/lib64/hw
     setprop ro.board.platform msm8953
     start load_modules
 
@@ -49,4 +49,16 @@ service load_modules /system/bin/load_modules.sh
     disabled
     user root
     group root
+    seclabel u:r:recovery:s0
+
+service keymasterd /system/bin/keymasterd
+     user root
+     group root
+     disabled
+     seclabel u:r:recovery:s0
+
+service health-hal-2-1 /system/bin/android.hardware.health@2.1-service
+    user root
+    group root
+    disabled
     seclabel u:r:recovery:s0
